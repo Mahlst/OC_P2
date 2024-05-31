@@ -371,12 +371,16 @@ h2 {
     display: flex;
 }
 
-.footer-propos, .footer-hebergement, .footer-assitance {
+.footer-contents {
     display: flex;
     flex-direction: column;
     width: 33%;
     gap: 15px;
     padding: 20px 0 20px 20px;
+}
+
+.footer-link:hover {
+    color: var(--main-color);
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -413,6 +417,19 @@ h2 {
 
     .populaires-cards .card-subtitle {
         font-size: 13px;
+    }
+
+    .activites {
+        margin-bottom: 30px;
+    }
+
+    .activites-cards .card {
+        height: 270px;
+        width: 193px;
+    }
+
+    .activites-cards img {
+        height: 200px;
     }
 }
 
