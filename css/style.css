@@ -23,7 +23,7 @@ body {
 
 .main-container {
     width: 100%;
-    max-width: 1340px;
+    max-width: 1440px;
     padding: 0 50px;
 }
 
@@ -233,18 +233,26 @@ h2 {
     width: 66%;
 }
 
+.hebergements-title {
+    margin-bottom: 30px;
+}
+
 .hebergements-cards {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
     margin-bottom: 30px;
+}
+
+.hebergements-links {
+    width: 33%;
 }
 
 .hebergements-cards .card {
     display: flex;
     flex-direction: column;
-    margin-top: 33px;
-    width: 250px;
+    
 }
 
 .hebergements-cards img {
@@ -258,8 +266,6 @@ h2 {
     padding-left: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    box-sizing: border-box;
 }
 
 .hebergements-cards .card-title {
@@ -332,11 +338,13 @@ h2 {
     margin: 65px 0 0 30px;
 }
 
+.activites-cards a {
+    width: 25%;
+}
+
 .activites-cards {
     margin: 30px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
     gap: 30px;
 }
 
@@ -344,12 +352,12 @@ h2 {
     display: flex;
     flex-direction: column;
     height: 439px;
-    width: 297.5px;
     padding: 0;
 }
 
 .activites-cards img {
     height: 380px;
+    width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -359,7 +367,6 @@ h2 {
     padding-left: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     box-sizing: border-box;
 }
 
@@ -429,7 +436,6 @@ h2 {
 
     .activites-cards .card {
         height: 270px;
-        width: 193px;
     }
 
     .activites-cards img {
@@ -438,7 +444,7 @@ h2 {
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
     .main-container {
         padding: 0px;
         overflow: hidden;
@@ -536,6 +542,10 @@ h2 {
         flex-direction: column;
     }
     
+    .hebergements-cards {
+        flex-direction: column;
+    }
+
     .hebergements-cards a {
         width: 100%;
     }
@@ -546,6 +556,10 @@ h2 {
 
     .hebergements-cards img {
         width: 100%;
+    }
+
+    .activites-cards {
+        flex-direction: column;
     }
 
     .activites-cards a {
@@ -574,4 +588,4 @@ h2 {
     .footer-contents {
         width: 100%;
     }
-} 
+}
